@@ -25,8 +25,10 @@ def train_model(
     device=None,
     save_path="braille_cnn.pth",
 ):
-    if device is None:
-        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    if torch.cuda.is_available():
+        device = "cuda"
+    else:
+        device = "cpu"
 
     print(f"Training on device: {device}")
 

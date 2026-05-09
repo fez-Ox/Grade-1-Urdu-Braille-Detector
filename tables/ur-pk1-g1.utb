@@ -223,3 +223,13 @@ always \x0688\x0650\x0651 6-346-15               +E,              ,+E
 always \x062A\x062A\x064E\x0651 6-2345-2345-2    TTE,             ,TTE
 always \x062A\x0650\x0651 15-6-2345              TE,              E,T
 #---end of table---#
+
+# Added for dataset compatibility (Grade 2 Contractions / Variants)
+word \x06C1\x06D2 125
+word \x062E\x0648\x062F 45-1346
+always \x0628\x06BE 23
+always \x0644\x0627 1236
+word \x06A9\x0648 12456
+always \x0646\x06D2 3456
+word \x0646\x06C1\x06CC\x06BA 1345
+word \x067E\x0631 1234
