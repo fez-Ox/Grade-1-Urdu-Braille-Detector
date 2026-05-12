@@ -1,6 +1,9 @@
 import os
 import sys
 
+# Ensure Notebook environments find local modules when running this script
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 import louis
 import torch
 from PIL import Image

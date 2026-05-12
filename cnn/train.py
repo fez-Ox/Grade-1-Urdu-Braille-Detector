@@ -1,6 +1,10 @@
 import glob
 import os
 import shutil
+import sys
+
+# Add the project root directory to the Python path so it can find the 'cnn', 'preprocessing', and 'segmentation' modules
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import torch
 import torch.nn as nn
