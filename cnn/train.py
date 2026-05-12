@@ -173,7 +173,7 @@ if __name__ == "__main__":
                 image_paths.append(final_crop_path)
                 labels.append(class_int)
 
-        if (idx + 1) % 20 == 0:
+        if (idx + 1) % 500 == 0:
             print(
                 f"Processed {idx + 1}/{len(image_files)} images. Extracted cells: {len(image_paths)}"
             )
