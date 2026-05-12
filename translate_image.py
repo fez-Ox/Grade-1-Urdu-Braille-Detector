@@ -113,6 +113,6 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         img_path = sys.argv[1]
     else:
-        img_path = "inputs/images/chunk_00004.jpg"
+        img_path = "inputs/images/chunk_00001.jpg"
 
     translate_image(img_path)
