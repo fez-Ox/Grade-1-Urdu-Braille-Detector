@@ -123,7 +123,7 @@ if __name__ == "__main__":
     image_files = sorted(glob.glob(os.path.join(images_dir, "*.jpg")))
 
     # Use a subset of images for testing if needed, or all of them.
-    max_images = 10000
+    max_images = 2000
     image_files = image_files[:max_images]
 
     successful_images = 0
@@ -173,7 +173,7 @@ if __name__ == "__main__":
                 image_paths.append(final_crop_path)
                 labels.append(class_int)
 
-        if (idx + 1) % 500 == 0:
+        if (idx + 1) % 250 == 0:
             print(
                 f"Processed {idx + 1}/{len(image_files)} images. Extracted cells: {len(image_paths)}"
             )
