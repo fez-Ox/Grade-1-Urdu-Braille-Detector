@@ -119,7 +119,7 @@ if __name__ == "__main__":
     image_files = sorted(glob.glob(os.path.join(images_dir, "*.jpg")))
 
     # Use a subset of images for testing if needed, or all of them.
-    max_images = 100
+    max_images = 10000
     image_files = image_files[:max_images]
 
     successful_images = 0
