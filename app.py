@@ -99,7 +99,7 @@ def process_braille(image_input):
 
 # --- Gradio UI ---
 with gr.Blocks(title="Urdu Braille OCR", theme=gr.themes.Soft()) as demo:
-    gr.Markdown("# 📖 Urdu Braille OCR System")
+    gr.Markdown("# Urdu Braille OCR System")
     gr.Markdown("### Powered by Custom Digital Image Processing (diplib.py) & CNN")
     
     with gr.Row():
@@ -111,7 +111,7 @@ with gr.Blocks(title="Urdu Braille OCR", theme=gr.themes.Soft()) as demo:
             output_text = gr.Textbox(label="Translated Urdu Text", lines=3, text_align="right", interactive=False)
             output_braille = gr.Textbox(label="Detected Braille Unicode", lines=3, interactive=False)
 
-    gr.Markdown("## 🛠️ Pipeline Storyboard (DIP Stages)")
+    gr.Markdown("## Pipeline Storyboard (DIP Stages)")
     storyboard_img = gr.Image(label="Pipeline Overview", interactive=False)
     
     btn.click(
