@@ -1,6 +1,13 @@
+# Project specific
 inputs/*
 outputs/*
 cnn_dataset/*
+!outputs/.gitkeep
+!cnn_dataset/.gitkeep
+
+# Gradio
+.gradio/
+temp_gradio_input.png
 
 # Python
 __pycache__/

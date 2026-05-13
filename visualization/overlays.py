@@ -21,7 +21,7 @@ def generate_overlays(
     else:
         img_color = image.copy()
 
-    # 1. Dots Overlay
+    #  Dots Overlay
     dots_overlay = img_color.copy()
     for dot in dots:
         x, y, w, h = dot.bbox
@@ -30,7 +30,7 @@ def generate_overlays(
         cv2.circle(dots_overlay, (int(cx), int(cy)), 2, (0, 0, 255), -1)
     cv2.imwrite(os.path.join(output_dir, "dots_overlay.png"), dots_overlay)
 
-    # 2. Lines Overlay
+    # Lines Overlay
     lines_overlay = img_color.copy()
     for i, line in enumerate(lines):
         if not line:
@@ -52,7 +52,7 @@ def generate_overlays(
         )
     cv2.imwrite(os.path.join(output_dir, "lines_overlay.png"), lines_overlay)
 
-    # 3. Cells and Ordering Overlay
+    # Cells and Ordering Overlay
     cells_overlay = img_color.copy()
     for cell in cells:
         x, y, w, h = cell.bbox
