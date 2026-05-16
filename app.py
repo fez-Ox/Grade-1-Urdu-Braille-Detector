@@ -1,5 +1,8 @@
 import os
 import sys
+import matplotlib
+matplotlib.use('Agg')
+
 import torch
 import gradio as gr
 import numpy as np

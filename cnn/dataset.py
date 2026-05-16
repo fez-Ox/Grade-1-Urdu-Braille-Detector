@@ -7,12 +7,6 @@ from torch.utils.data import Dataset
 
 class BrailleCellDataset(Dataset):
     def __init__(self, image_paths, labels=None, transform=None):
-        """
-        Args:
-            image_paths (list of str): Paths to the 64x64 cell images.
-            labels (list of int, optional): Corresponding integer classes (0-63).
-            transform: torchvision transforms.
-        """
         self.image_paths = image_paths
         self.labels = labels
         self.transform = transform

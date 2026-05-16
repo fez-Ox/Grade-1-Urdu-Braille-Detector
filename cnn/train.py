@@ -3,7 +3,6 @@ import os
 import shutil
 import sys
 
-# Add the project root directory to the Python path so it can find the 'cnn', 'preprocessing', and 'segmentation' modules
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import torch
@@ -86,10 +85,6 @@ def train_model(
 
 
 def dot_string_to_class_int(dot_str: str) -> int:
-    """
-    Converts a standard Braille dot string (like '134', '1', or '0' for space)
-    into our 0-63 class integer.
-    """
     if dot_str == "0":
         return 0
 

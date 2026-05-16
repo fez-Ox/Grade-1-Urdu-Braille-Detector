@@ -2,12 +2,6 @@
 
 
 def pattern_to_int(pattern: str) -> int:
-    """
-    Converts a 6-bit string pattern to an integer 0-63.
-    Example: "100000" (Dot 1) -> 1
-             "010000" (Dot 2) -> 2
-             "110000" (Dots 1,2) -> 3
-    """
     if len(pattern) != 6:
         raise ValueError("Pattern must be exactly 6 characters long.")
 
@@ -20,9 +14,6 @@ def pattern_to_int(pattern: str) -> int:
 
 
 def int_to_pattern(class_idx: int) -> str:
-    """
-    Converts a class index (0-63) back to a 6-bit string pattern.
-    """
     if not (0 <= class_idx <= 63):
         raise ValueError("Class index must be between 0 and 63.")
 
@@ -31,10 +22,6 @@ def int_to_pattern(class_idx: int) -> str:
 
 
 def int_to_unicode_braille(class_idx: int) -> str:
-    """
-    Converts a class index (0-63) to its actual Unicode Braille character.
-    Unicode Braille base is U+2800 (Blank Space).
-    """
     if not (0 <= class_idx <= 63):
         raise ValueError("Class index must be between 0 and 63.")
 
